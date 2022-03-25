@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Nunito', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    position: relative;
+}
+
+main{
+    width: 100%;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    padding-bottom: 20px;
+    font-size: 35px;
+    color: #FF4D6D;
+}
+
+.subtitle{
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #FFA6B6;
+}
+
+.text{
+    margin-bottom: 20px;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.marcaAgua{
+    position: relative;
+    z-index: -1;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.gradient1{
+    background: linear-gradient(90deg, rgba(255,77,109,0.8239670868347339) 15%, rgba(255,70,182,0.7035189075630253) 45%, rgba(231,216,197,0.938813025210084) 100%);
+}
+
+.gradient2{
+    background: linear-gradient(90deg, rgba(255,166,182,0.7231267507002801) 15%, rgba(231,216,197,0.9108018207282913) 45%, rgba(198,243,63,0.6643032212885154) 100%);
+}
+
+.gradient3{
+    background: linear-gradient(328deg, rgba(255,166,182,0.7231267507002801) 15%, rgba(231,216,197,0.9108018207282913) 45%, rgba(255,255,255,1) 100%);
+}
+
+.title{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title-white{
+    color: #fff;
+}
+
+.title-pink-dark{
+    color: #FF4D6D;
+}
+
+.info-green-lime{
+    color: #C6F33F;
+}
+
+.info{
+    font-size: 45px;
+    font-weight: bold;
+}
+
+/* MENU*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    background-color: #FFA6B6;
+    padding: 10px 50px;
+}
+
+nav .logo{
+    width: 85px;
+    height: 85px;
+    padding: 20px 10px;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li a{
+    margin: 30px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    height: 60px;
+}
+
+nav ul li a:hover{
+    color:  #C6F33F;
+}
+
+/*HOME*/
+
+.home{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(#FFA6B6, #E7D8C5, #FFFFFF);
+}
+
+.home img{
+    width: 200px;
+    height: 400px;
+    margin-left: 150px;
+    margin-top: 20px;
+    padding: 20px 10px;
+}
+
+.home .content{
+    width: 50%;
+    margin: auto;
+}
+
+.home .content h1{
+    color: #ffff;
+    font-size: 60px;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+.home .content p{
+    font-size: 20px;
+    bottom: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.home .content a{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background: #E7D8C5;
+    justify-content: center;
+    align-items: center;
+    color: #FF4D6D;
+    font-weight: 900;
+}
+
+
+/* Catalogo */
+.catalogo h1{
+    position: relative;
+    text-align: center;
+}
+
+.sabores,.adornos{
+    width: 50%;
+    height: 400px;
+    color: #000;
+    font-weight: 600;
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+li{
+    margin-top: 15px;
+}
+
+/*Contacto*/
+.contact h1{
+    position: relative;
+    text-align: center;
+}
+
+.datos,.map{
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    height: 70px;
+    background-color: #E7D8C5;
+}
+
+.redes{
+    display: block;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes i{
+    color: #FF4D6D;
+    margin: 5px;
+}
+
+h3{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+
+/* Pedidos */
+.pedido h1{
+    position: relative;
+    text-align: center;
+    margin: 35px;
+}
+
+form{
+    width: 400px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    font-size: 13px;
+    font-weight: lighter;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: lighter;
+    padding: 5px;
+}
+
+input[type=checkbox]{
+    height: 25px;
+    width: 200px;
+    margin-right: -50px;
+}
+
+input::placeholder{
+    padding-left: 20px;
+}
+
+.sabor{
+    font-size: 2.2rem;
+    font-weight: 200;
+}
+
+.adorno{
+    font-size: 1.5rem;
+}
+
+.btn{
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-top: 30px;
+    background: #FF4D6D;
+    color: #C6F33F;
+    border: none;
+    cursor: pointer;
+}
+
+/*Administrador*/
+.card{
+    margin-top: 50px;
+    padding: 20px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    border: 2px solid #000;
+}
+
+.pedidos{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing:  3px;
+}
+
+th,td{
+    padding: 12px;
+    border-bottom: 2px solid #000;
+    height: auto;
+}
+
+td{
+    font-size: 15px;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(244,71,100,.29);
+}
